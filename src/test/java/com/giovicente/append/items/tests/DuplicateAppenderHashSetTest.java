@@ -1,4 +1,4 @@
-package com.giovicente.append.items.test;
+package com.giovicente.append.items.tests;
 
 import com.giovicente.append.items.DuplicateAppenderHashSet;
 import com.giovicente.append.items.ItemsBuilder;
