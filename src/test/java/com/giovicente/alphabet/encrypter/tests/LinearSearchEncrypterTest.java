@@ -50,8 +50,10 @@ public class LinearSearchEncrypterTest {
 
     @Test
     public void shouldReturnCorrectEncryptedLongString() {
-        String expectedEncryptedReturn = "791522114149791522114149791522114149791522114149791522114149791522114149791522114149791522114149791522114149791522114149";
-        String actualEncryptedReturn = encrypter.encrypt(
+        String expectedEncryptedReturn =
+                "791522114149791522114149791522114149791522114149791522114149791522114149791522114149791522114149791522114149791522114149";
+        String actualEncryptedReturn =
+                encrypter.encrypt(
                 "GIOVANNIGIOVANNIGIOVANNIGIOVANNIGIOVANNIGIOVANNIGIOVANNIGIOVANNIGIOVANNIGIOVANNI"
         );
 
