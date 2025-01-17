@@ -4,14 +4,12 @@ public class BinarySearchEncrypter implements Encrypter {
     @Override
     public String encrypt(String textToEncrypt) {
         final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        char[] alphabetChars = ALPHABET.toCharArray();
-
         StringBuilder encryptedText = new StringBuilder();
 
         for (int i = 0; i < textToEncrypt.length(); i++) {
             if (textToEncrypt.charAt(i) != ' ') {
                 int left = 0;
-                int right = alphabetChars.length - 1;
+                int right = ALPHABET.length() - 1;
 
                 while (left <= right) {
                     int middle = left + (right - left ) / 2;

@@ -8,18 +8,16 @@ import org.junit.Test;
 public class LinearSearchEncrypterTest {
 
     private static LinearSearchEncrypter encrypter;
-    private static String textToEncrypt;
 
     @BeforeClass
     public static void setUp() {
         encrypter = new LinearSearchEncrypter();
-        textToEncrypt = "Foo Bar";
     }
 
     @Test
     public void shouldReturnCorrectEncryptedString() {
         String expectedEncryptedReturn = "615152118";
-        String actualEncryptedReturn = encrypter.encrypt(textToEncrypt);
+        String actualEncryptedReturn = encrypter.encrypt("Foo Bar");
 
         Assert.assertEquals(expectedEncryptedReturn, actualEncryptedReturn);
     }

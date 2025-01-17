@@ -7,18 +7,16 @@ import org.junit.Test;
 
 public class BinarySearchEncrypterTest {
     private static BinarySearchEncrypter encrypter;
-    private static String textToEncrypt;
 
     @BeforeClass
     public static void setUp() {
         encrypter = new BinarySearchEncrypter();
-        textToEncrypt = "Foo Bar";
     }
 
     @Test
     public void shouldReturnCorrectEncryptedString() {
         String expectedEncryptedReturn = "615152118";
-        String actualEncryptedReturn = encrypter.encrypt(textToEncrypt);
+        String actualEncryptedReturn = encrypter.encrypt("Foo Bar");
 
         Assert.assertEquals(expectedEncryptedReturn, actualEncryptedReturn);
     }
