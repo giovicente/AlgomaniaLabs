@@ -6,7 +6,7 @@ import java.util.List;
 public class OptimizedRightTriangle {
 
     public static void main(String[] args) {
-        final int MAX_NUMBER_OF_ASTERISKS = 21;
+        final int MAX_NUMBER_OF_ASTERISKS = 6;
 
         List<String> triangle = generateTriangle(MAX_NUMBER_OF_ASTERISKS);
         triangle.forEach(System.out::println);
