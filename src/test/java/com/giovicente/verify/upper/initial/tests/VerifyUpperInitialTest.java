@@ -17,4 +17,16 @@ public class VerifyUpperInitialTest {
         String word = "giovanni";
         Assert.assertFalse(VerifyUpperInitial.verify(word));
     }
+
+    @Test
+    public void shouldReturnTrueUpperCaseVerificationLongWord() {
+        String word = "Pneumonoultramicroscopicsilicovolcanoconiosis";
+        Assert.assertTrue(VerifyUpperInitial.verify(word));
+    }
+
+    @Test
+    public void shouldReturnFalseUpperCaseVerificationLongWord() {
+        String word = "pneumonoultramicroscopicsilicovolcanoconiosis";
+        Assert.assertFalse(VerifyUpperInitial.verify(word));
+    }
 }
