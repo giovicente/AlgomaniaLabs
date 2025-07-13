@@ -2,12 +2,7 @@ package com.giovicente.human.readable.time;
 
 public class HumanReadableTime {
 
-    public static void main(String[] args) {
-        System.out.println(makeReadable(171212));
-    }
-
     public static String makeReadable(int seconds) {
-
         if (isValid(seconds)) {
             return String.format(
                    "%02d:%02d:%02d", seconds / 3600, (seconds % 3600) / 60, seconds % 60
